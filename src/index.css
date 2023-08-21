@@ -1,7 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ font-family: 'Arvo', serif;
+}
+
+#root{
+  width: 100%;
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  --anim_duration:3s;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -70,4 +82,53 @@ button:focus-visible {
 
 
 /*Header*/
+.banner{
+  background: rgb(2,1,29);
+  background: linear-gradient(180deg, rgba(2,1,29,1) 18%, rgba(41,42,42,1) 88%);
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 
+.banner_img img{
+  animation-duration: var(--anim_duration);
+}
+
+/**/
+.banner_title{
+  text-transform: uppercase;
+  animation-duration: var(--anim_duration);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.breakpoint::before{
+  content: "\a";
+  display: block;
+}
+
+
+.banner_title h1{
+  margin-bottom: 25px;
+}
+
+.banner_title p{
+  font-size: 35px;
+  line-height: 40px;
+}
+
+.banner_title span{
+  color: red;
+  animation-duration: var(--anim_duration);
+}
+
+.menu{
+}
+
+.menu a{
+  list-style: none;
+  font-size: 25px;
+  margin: 0 15px;
+}
