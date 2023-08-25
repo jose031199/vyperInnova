@@ -41,6 +41,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -83,8 +84,8 @@ button:focus-visible {
 
 /*Header*/
 .banner{
-  background: rgb(2,1,29);
-  background: linear-gradient(180deg, rgba(2,1,29,1) 18%, rgba(41,42,42,1) 88%);
+  background: rgb(0,0,0);
+background: linear-gradient(180deg, rgba(0,0,0,1) 65%, rgba(36,32,32,1) 88%);
   height: 100vh;
   color: white;
   display: flex;
@@ -131,4 +132,182 @@ button:focus-visible {
   list-style: none;
   font-size: 25px;
   margin: 0 15px;
+}
+
+/*About Us*/
+.about{
+  background: rgb(117,9,0);
+  background: linear-gradient(180deg, rgba(117,9,0,0.9472163865546218) 44%, rgba(57,5,1,0.9472163865546218) 65%, rgba(88,19,19,1) 86%);
+  display: flex;
+  color: white;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.about_blog{
+  font-size: 35px;
+}
+
+.about_blog{
+  text-transform: uppercase;
+}
+
+.about_blog p{
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 45px;
+}
+ 
+
+/*Services*/
+.services{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.services h2{
+  margin-top: 15px;
+  text-transform: uppercase;
+  font-size: 35px;
+}
+
+.service{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 80px;
+}
+
+.service_card{
+  margin-top: 10px;
+  align-self: center;
+}
+
+.service_text{
+  font-size: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  display: none;
+}
+.service_card img{
+  height: 500px;
+  width: 500px;
+  opacity: 1;
+}
+
+.service_card:hover .service_text{
+  display: block;
+  animation:animate__flash;
+  animation-delay: 5s;
+  animation-duration: 10s;
+}
+
+/*.service_card:hover p{
+  opacity: 0.6;
+  animation: backInUp;
+  animation-duration: 5s;
+  display:block;
+}*/
+
+/*Trainer*/
+.trainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: rgb(150,22,22);
+  background: linear-gradient(56deg, rgba(150,22,22,1) 19%, rgba(32,9,9,0.9472163865546218) 90%);}
+
+.trainer_info{
+  text-transform: uppercase;
+}
+
+.trainer_info h2,li{
+  color: white;
+}
+
+.trainer_info p{
+  color: gold;
+}
+
+.trainer_info h2{
+  margin-bottom: 30px;
+}
+
+.trainer_info p{
+ margin-bottom: 15px;
+}
+
+.trainer_data li{
+ margin-bottom: 8px;
+}
+
+/*Prices*/
+
+.prices{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.prices_card{
+  display: flex;
+  gap: 18px;
+}
+
+/*Footer*/
+
+footer{
+  background: rgb(0,0,0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 65%, rgba(36,32,32,1) 88%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  gap: 30px;
+}
+
+footer *{
+  margin-top: 10px;
+}
+
+footer p{
+  text-align: center;
+  text-transform: uppercase;
+  color: brown;
+}
+
+
+footer a{
+  list-style: none;
+  font-size: 25px;
+}
+
+/*Icons*/
+.bi-envelope{
+  color: gold;
+}
+
+.bi-whatsapp{
+  color: rgb(5, 109, 5);
+}
+
+
+.bi-instagram{
+  color: rgb(164, 12, 172);
+}
+.bi-facebook{
+  color: rgb(15, 114, 171);
+}
+.bi-tiktok{
+  color: rgb(236, 235, 227);
+}
+
+.bi-person-fill{
+  color: gold;
+}
+
+.bi:hover{
+  font-weight: bolder;
 }

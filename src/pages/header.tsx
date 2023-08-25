@@ -4,7 +4,7 @@ import '../index.css'
 import Menu from './menu/menu'
 const Header = () => {
   return (
-        <div className='banner'>
+        <header className='banner'>
             <div className='banner_img'>
                 <img className='animate__animated animate__fadeInDown' src={logo} alt="Logo" />
             </div>
@@ -15,7 +15,7 @@ const Header = () => {
                 <p>"Empieza <span className=''>hoy</span> mismo ,el<span className='breakpoint'></span> <span className=''>ma&ntilde;ana</span> no esta garantizado"</p>
                </div>
             </div>
-        </div>   
+        </header>   
   )
 }
 

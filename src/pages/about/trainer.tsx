@@ -1,12 +1,13 @@
+import trainer  from '../../images/trainer_certf.png'
 const Trainer = () => {
   return (
-    <div className="trainer">
+    <section className="trainer">
         <div className="trainer_img">
-            <img src="" alt="" />
+            <img src={trainer} alt="" />
         </div>
 
         <div className="trainer_info">
-            <h2>Qui&etilde;n ser&atilde; mi entrenador?</h2>
+            <h2>Qui&eacute;n ser&aacute; mi entrenador?</h2>
             <p>Yo, Elias Ortiz, me comprometo a estar a tu lado en todo tu camino fitness
             </p>
             
@@ -24,7 +25,7 @@ const Trainer = () => {
 
         </div>
 
-    </div>
+    </section>
   )
 }
 
