@@ -2,11 +2,13 @@
 const Footer = () => {
   return (
     <footer>
-        <a href=""><i className="bi bi-envelope"></i></a>
-        <a href=""><i className="bi bi-whatsapp"></i></a>
-        <a href=""><i className="bi bi-instagram"></i></a>
-        <a href=""><i className="bi bi-facebook"></i></a>
-        <a href=""><i className="bi bi-tiktok"></i></a>
+      <div className="footer-social">
+        <a href=""><i className="bi bi-envelope footer-icon"></i></a>
+        <a href=""><i className="bi bi-whatsapp footer-icon"></i></a>
+        <a href=""><i className="bi bi-instagram footer-icon"></i></a>
+        <a href=""><i className="bi bi-facebook footer-icon"></i></a>
+        <a href=""><i className="bi bi-tiktok footer-icon"></i></a>
+        </div>
         <p>Vyper Innova |  © {new Date().getFullYear()} Vyper Innova - All Rights Reserved</p>
     </footer>
   )

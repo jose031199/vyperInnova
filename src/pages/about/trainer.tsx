@@ -8,7 +8,7 @@ const Trainer = () => {
 
         <div className="trainer_info">
             <h2>Qui&eacute;n ser&aacute; mi entrenador?</h2>
-            <p>Yo, Elias Ortiz, me comprometo a estar a tu lado en todo tu camino fitness
+            <p>Yo, Elias Ortiz, me comprometo  a <span className='breakpoint'></span> estar  a tu lado en todo tu camino fitness
             </p>
             
             <ul className="trainer_data">
@@ -20,7 +20,7 @@ const Trainer = () => {
             </ul>
 
             <p className="trainer_poem">
-                "Nuestro verdadero proposito en esta vida es servir, y el que no sirve, no vive de verdad."
+                "Nuestro verdadero proposito en esta vida es servir, <span className='breakpoint'></span> y el que no sirve, no vive de verdad."
             </p>
 
         </div>
