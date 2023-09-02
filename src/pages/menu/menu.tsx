@@ -2,21 +2,6 @@ import {Link } from "react-router-dom";
 
 const Menu = () => {
 
-  function showMenu(){
-    const menu = document.getElementById('menu_drop');
-    const menuBurger = document.getElementById('burger');
-    const close = document.getElementById('close')
-      menuBurger?.addEventListener('click',()=>{
-        //alert('Wey')
-        menu?.classList.add('show')
-      })
-
-      close?.addEventListener('click',()=>{
-        menu?.classList.remove('show')
-      })
-  }
-
-
   return (
     <div className="menu" id="menu">
        <i className="bi bi-list burger icon" id="burger" onClick={(e)=>{document.getElementById('menu_drop')?.classList.add('show');  document.getElementById('burger')?.classList.remove('icon');}}></i> 
