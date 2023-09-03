@@ -1,4 +1,3 @@
-import React from 'react'
 import google from '../../images/google_logo.png'
 import outlook from '../../images/outlook.png'
 import {Link } from "react-router-dom";
