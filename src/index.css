@@ -510,17 +510,17 @@ section{
     font-size: 30px;
   }
   .trainer_img img{
-    height: 200px;
+    height: 250px;
     width: 400px;
   }
 
     .trainer_info p{
-    font-size:18px;
+    font-size:14px;
   }
 
   .trainer_data li{
     margin-top: 5px;
-    font-size: 16px;
+    font-size: 14px;
   }
 
 }
@@ -660,8 +660,8 @@ section{
 
   }
   .price_card{
-    margin-top: 12px;
-
+    margin-top: 5px;
+    font-size: 13px;
   }
   .prices_card>:nth-child(2),.prices_card>:nth-child(3){
     height: 14%;
