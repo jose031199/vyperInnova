@@ -1,4 +1,4 @@
-import trainer  from '../../images/trainer_certf.png'
+import trainer  from '../../images/trainer_elias.png'
 const Trainer = () => {
   return (
     <section className="trainer">
