@@ -8,18 +8,17 @@ const LoginUser = () => {
       <div className='login_form'>
         <form action="">
           <h1>Login</h1>
-          <input type="email" name="" id="" placeholder='email'/>
-          <input type="password" name="" id="" placeholder='password'/>
+          {/*<input type="email" name="" id="" placeholder='email'/>
+          <input type="password" name="" id="" placeholder='password'/>*/}
           <div className='login_options'>
-            <input type="image" src={google} width={90} height={80}/>
-            <input type="image" src={outlook} alt="" width={90} height={80}/>
+            <input type="image" src={google} width={90} height={80} onClick={()=>{open('https://docs.google.com/forms/d/e/1FAIpQLScrYtHZIxiKb2ghkLi-B1eDTMH_gMElDO3vZdbzxjpBZzPlDw/viewform','_blank')}}/>
+            <input type="image" src={outlook} alt="" width={90} height={80} onClick={()=>{open('https://docs.google.com/forms/d/e/1FAIpQLScrYtHZIxiKb2ghkLi-B1eDTMH_gMElDO3vZdbzxjpBZzPlDw/viewform','_blank')}}/>
           </div>
 
           <div className='submit_options'>
-            <input type="submit" value="Login" />
+            {/*<input type="submit" value="Login" />*/}
             <Link to={'/'}  className="back">Regresar</Link>
           </div>
-
         </form>
       </div>
     </div>

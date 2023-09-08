@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
- font-family: 'Arvo', serif;
 }
 
 #root{
@@ -10,9 +9,12 @@
 }
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  --font_main:'Arvo',sans-serif;
+  --font_second:'Poppins',sans-serif;
+  --font_third:'Fjalla One',sans-serif;
+  --font-sans:'Open Sans',sans-serif;
   --textSize :35px;
   --titleSize: 40px;
   --anim_duration:3s;
@@ -147,11 +149,17 @@ section{
 
 .banner_title h1{
   margin-bottom: 25px;
+  font-family: var(--font_main);
 }
 
 .banner_title p{
+  font-family: var(--font_second);
   font-size: var(--textSize);
   line-height: 40px;
+}
+
+.login{
+  font-family: var(--font_second);
 }
 
 .banner_title span{
@@ -278,6 +286,7 @@ section{
 
 .about_blog h2{
   font-size: var(--titleSize);
+  font-family: var(--font_main);
 }
 
 .about_blog{
@@ -288,6 +297,7 @@ section{
   font-size: 25px;
   text-transform: uppercase;
   line-height: 45px;
+  font-family: var(--font_third);
 }
  
 .about_blog span i{
@@ -344,6 +354,7 @@ section{
   margin-top: 15px;
   text-transform: uppercase;
   font-size: var(--titleSize);
+  font-family: var(--font_main);
   text-align: center;
 }
 
@@ -379,6 +390,7 @@ section{
 
 .service_text p{
   font-size:var(--textSize);
+  font-family: var(--font_third);
   text-align: center;
   text-transform: uppercase;
   bottom: 0%;
@@ -436,7 +448,7 @@ section{
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background: rgb(150,22,22);
+  background: rgb(114, 14, 14);
   background: linear-gradient(56deg, rgba(150,22,22,1) 19%, rgba(32,9,9,0.9472163865546218) 90%);
   
 }
@@ -462,15 +474,18 @@ section{
 .trainer_info h2{
   margin-bottom: 30px;
   font-size: 50px;
+  font-family: var(--font_main);
 }
 
 .trainer_info p{
  margin-bottom: 15px;
+ font-family: var(--font_second);
 }
 
 .trainer_data li{
  margin-bottom: 8px;
- font-size: 20px;
+ font-size: 30px;
+ font-family: var(--font_second);
 }
 
 
@@ -493,10 +508,15 @@ section{
   }
 
   .trainer_info p{
-    font-size:20px;
+    font-size:25px;
+    text-align: left;
   }
 
+  .trainer_data li{
+    font-size: 25px;
+    text-align: left;
 
+   }
 }
 
 
@@ -539,6 +559,7 @@ section{
 }
 .prices h2{
   color: white;
+  font-family: var(--font_main);
   font-size: var(--titleSize);
   margin-bottom: 25px;
 }
@@ -552,6 +573,7 @@ section{
 
 .price_card h3{
   font-size: var(--titleSize);
+  font-family: var(--font_second);
   color: brown;
   margin-bottom: 10px;
 }
@@ -603,10 +625,12 @@ section{
 
 .price_card ul li{
   margin-top: 15px;
+  font-family: var(--font_second);
 }
 
 .price_card ul li span{
-  color: brown;
+  color: rgb(239, 28, 28);
+  font-weight: bolder;
 }
 
 .price_card button{
@@ -614,6 +638,10 @@ section{
   color: white;
   padding: 20px 15px;
   transition:background 2s ease-in;
+}
+
+.price_card span{
+  font-family: var(--font_second);
 }
 
 .price_card button:hover{
@@ -697,6 +725,7 @@ footer *{
 footer p{
   text-align: center;
   text-transform: uppercase;
+  font-family: var(--font_second);
   color: brown;
 }
 
@@ -807,12 +836,16 @@ footer a{
 
 .login_form input[type=submit],.back{
   padding: 20px;
-  margin: 0 10px;
+  margin: 0px 10px;
   border-radius: 15px;
   font-size: 15px;
   border: none;
   color: gold;
   background: #2e2d2dd5;
+}
+
+.submit_options{
+  margin-top: 20px;
 }
 
 .login_form input[type=submit],.back:hover{

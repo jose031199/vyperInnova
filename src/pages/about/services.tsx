@@ -1,4 +1,4 @@
-import training from '../../images/training.jpg'
+ import training from '../../images/training.jpg'
 import healthy from '../../images/healthy_food.jpg'
 import exercise from '../../images/exercise_tech.jpg'
 import collection from '../../images/collection.jpg'
@@ -10,7 +10,7 @@ import social from '../../images/social_media.jpg'
 const Services = () => {
   return (
     <section className="services">
-       <h2>Que servicios ofrecemos?</h2>
+       <h2>¿Qu&eacute; servicios ofrecemos?</h2>
         <div className="service">
             <div className="service_card">
             <img src={training} alt="" />
