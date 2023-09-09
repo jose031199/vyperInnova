@@ -454,7 +454,7 @@ section{
 }
 
   .trainer_img img{
-    width: 450px;
+    width: 600px;
     height: 700px;
   }
 
@@ -487,7 +487,6 @@ section{
  font-size: 30px;
  font-family: var(--font_second);
 }
-
 
 /*Trainer media*/
 
